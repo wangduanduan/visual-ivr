@@ -63,8 +63,8 @@ var config = {
 var IVRApi = batchCreatAjaxApi(config)
 
 IVRApi.login.fire({}, 'email=bzkun@welljoint.com&password=Aa123456')
-.done(function(res){
+.done(function (res) {
   IVRApi.$headers = {
-    sessionId: 
+    sessionId: '1231123'
   }
 })
