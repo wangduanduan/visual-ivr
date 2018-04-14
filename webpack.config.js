@@ -32,6 +32,20 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   externals: {
-    jquery: 'jQuery'
+    jquery: 'jQuery',
+    jsPlumb: 'jsPlumb',
+    uuid: 'uuid',
+    Mustache: 'Mustache',
+    graphlib: 'graphlib'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader'
+        }
+      }
+    ]
   }
 }

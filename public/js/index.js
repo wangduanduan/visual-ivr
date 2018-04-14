@@ -139,7 +139,7 @@
     // initEndNode()
 
     // DataProcess.inputData(data.nodeList)
-    // DataDraw.draw(data.nodeList)
+    DataDraw.draw(data.nodeList)
   }
 
   // 链接建立后的检查

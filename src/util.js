@@ -40,3 +40,7 @@ export function batchCreatAjaxApi (conf) {
 
   return api
 }
+
+export function copyData (data) {
+  return JSON.parse(JSON.stringify(data))
+}

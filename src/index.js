@@ -1,10 +1,13 @@
-import config from './config/jsplumb.config'
-import request from './api'
+import data from './config/test-data'
+import nodeDraw from './node-draw'
+import jsPlumb from 'jsPlumb'
+import domConfig from './config/dom.config'
 
-/* console */
-function sayHello (params) {
-  console.log(config)
-  console.log(request)
-}
+jsPlumb.ready(function () {
+  jsPlumb.setContainer(domConfig.nodeBackgroundId)
+  jsPlumb.importDefaults({
+    ConnectionsDetachable: false
+  })
 
-sayHello()
+  nodeDraw.draw(data.nodeList)
+})
